@@ -2,8 +2,8 @@ import os
 from shutil import copy, rmtree
 from PIL import Image
 
-src = r"C:\Users\Andrew\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\LocalState\Assets"
-dst = r"D:\Coding\2017\scripts\spotlight images\temp"
+src = r"C:\Users\***\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\LocalState\Assets"
+dst = r"D:\***\scripts\spotlight images\temp"
 
 list_of_files = os.listdir(src)
 for f in list_of_files :
@@ -23,9 +23,8 @@ for f in list_of_files :
 	im = Image.open(f)
 	w,h = im.size
 	if w == 1920 :	
-		copy(f, r"D:\Coding\2017\scripts\spotlight images\images")
-		#os.rename(os.path.join(r"D:\Coding\2017\scripts\spotlight images\images",f), os.path.join(r"D:\Coding\2017\scripts\spotlight images\images", str(ctr)) + ".jpg" )
-		#ctr = ctr + 1
+		copy(f, r"D:\***\scripts\spotlight images\images")
+		
 
 #rmtree(dst, ignore_errors = True)
 #os.mkdir(dst)
